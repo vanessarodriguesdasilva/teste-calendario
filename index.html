@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calendário — Dezembro 2025 (Formatura)</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" role="application" aria-label="Calendário de Dezembro de 2025">
+    <div class="header">
+      <div>
+        <div class="month">Dezembro 2025</div>
+        <div class="sub">Formatura — Terceirão (clique no dia para adicionar ao seu calendário)</div>
+      </div>
+      <div class="sub">13/12/2025 — Sábado</div>
+    </div>
+
+    <div class="weekdays" aria-hidden="true">
+      <div class="weekday">Dom</div>
+      <div class="weekday">Seg</div>
+      <div class="weekday">Ter</div>
+      <div class="weekday">Qua</div>
+      <div class="weekday">Qui</div>
+      <div class="weekday">Sex</div>
+      <div class="weekday">Sáb</div>
+    </div>
+
+    <div class="days" id="daysGrid" aria-live="polite"></div>
+
+    <div class="footer">
+      <button class="btn" id="downloadIcs">Adicionar (arquivo .ics)</button>
+      <a id="googleLink" class="btn primary" href="#" target="_blank" rel="noopener">
+        Adicionar no Google
+      </a>
+    </div>
+
+    <div class="hint">
+      Se estiver no celular, tocar no botão ".ics" geralmente abre o app de calendário.
+    </div>
+  </div>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
